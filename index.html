@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Test Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/657b80fdff.js"></script>
+        <script src="https://kit.fontawesome.com/e372b1a146.js" crossorigin="anonymous"></script>
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-weight: 450;
+            }
+
+            .container1{
+                background-image:url(images/glass1.png);
+                height: auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding-top: 300px;
+                padding-left: 200px;
+                padding-bottom:100px;
+            }
+            nav{
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+            }
+            #logo{
+                color: #65D8DF;
+            }
+            nav a{
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                margin-left: 20px;
+                font-weight: bolder;
+            }
+            .navbar-brand{
+                color:#FFE400;
+                font-size: 30px;
+            }
+            .container1 h1{
+                color:white;
+                margin-bottom: 70px;
+                font-size: 100px;
+                font-weight: 750;
+                font-size: clamp(2px,100px,150px);
+            }
+            .container1 p{
+                font-size: 20px;
+                color:white;
+                max-width: 700px;
+                margin-bottom: 70px;
+            }
+            .container1 h3{
+                color: #FFE400;
+                font-size: 35px;
+            }
+            .container1 button{
+                color:white;
+                background-color:#FFE400;
+                width: 150px;
+                height: 60px;
+                border-radius: 20px;
+                border: none;
+                font-weight: 500;
+                animation-name: button1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes button1{
+                0%{
+                    width: 100px;
+                    height: 30px;
+                }
+                50%{
+                    width: 150px;
+                    height: 60px;
+                }
+                100%{
+                    width: 100px;
+                    height: 30px;
+                }
+            }
+            
+            .v1 p{
+                font-size: 20px;
+            }
+            .v1 h1{
+                font-size: 50px;
+            }
+            .v1 button{
+                color:white;
+                background-color: rgb(25, 102, 216);
+                width: 150px;
+                height: 60px;
+                border-radius: 20px;
+                border: none;
+                font-weight: 500;
+                animation-name: button1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            
+
+            .container2{
+                height: auto;
+                background-color:#FFE400;
+                width: 100%;
+                margin: 0;
+            }
+            .col1{
+                padding:100px;
+               background-color:#FFE400;
+            }
+            .col1 img{
+                border: 20px solid #65D8DF;
+            }
+            .col2{
+                background-color:#FFE400;
+                padding: 100px;
+                margin-right: 0;
+                width: 100%;  
+            }
+            .col2 h1{
+                font-size: clamp(4px,60px,80px);
+            }
+            .v1{
+                background-color:white;
+                height: 100%;
+                border-radius: 30px;
+                padding: 100px;
+                -webkit-box-shadow: 12px 12px 63px #e8e8e8, -12px -12px 63px #ffffff;
+box-shadow: 12px 12px 63px #e8e8e8, -12px -12px 63px #ffffff;
+            }
+            .colast{
+                background-color:white;
+                height: 100%;
+                border-radius: 30px;
+                padding: 100px;
+                -webkit-box-shadow: 12px 12px 63px #e8e8e8, -12px -12px 63px #ffffff;
+box-shadow: 12px 12px 63px #e8e8e8, -12px -12px 63px #ffffff;
+            }
+            .container3{
+                height: auto;
+                margin: 0;
+            }
+            .spec1{
+                padding: 100px;
+                position:relative;
+              
+            }
+            .specv2{
+                background-color:#65D8DF
+                ;
+                height: 500px;
+                position: absolute;
+                width: 70%;
+                bottom: 10px;
+                padding: 20px;
+                padding-top: 130px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+               
+            }
+            .specv2 h1{
+                font-size: clamp(2px,60px,80px);
+                font-weight: 700;
+            }
+            .spec2, .spec3{
+                font-size: 20px;
+                padding: 100px;
+                padding-left: 0px;
+            }
+            .container5{
+                padding: 100px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                margin: 0;
+            }
+            .phone2{
+                padding: 100px;
+                margin: 0;
+                padding-left: 0;
+            }
+            .talk{
+                background-color:white;
+                height: 100%;
+                border-radius: 30px;
+                padding: 100px;
+                font-size: 20px;
+                padding-top: 50px;
+               
+            }
+            .talk button{
+                color:rgb(0, 0, 0);
+                background-color: #FFE400;
+                width: 150px;
+                height: 60px;
+                border-radius: 20px;
+                border: none;
+                margin-left: 0;
+                font-weight: 500;
+                animation-name: button1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                font-size: 15px;
+            }
+            .talk h1{
+                font-weight: 700;
+                font-size: 60px;
+                font-size: clamp(2px,60px,80px);
+            }
+            .container6{
+                background-color:#FFE400;
+                padding: 100px;
+                height: 900px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                margin: 0%;
+            }
+            .phone1 img{
+                width: 100%;
+                height: 100%;
+            }
+            .last1, .last2{
+                padding: 100px;
+            }
+            .last1{
+                padding-right: 0px;
+            }
+            .last2{
+                padding-left: 50px;
+            }
+            .last1 h1{
+                font-size: 60px;
+                font-weight: 700;
+                font-size: clamp(2px,60px,80px);
+            }
+            .last1 p{
+                font-size: 20px;
+            }
+            .last1 button{
+                width: 150px;
+                height: 60px;
+                border: 3px solid black;
+                font-weight: 500;
+                background-color: #FFE400;
+                animation-name: button1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            .last2 img{
+                width: 100%;
+                height: 60%;
+            }
+            #aaa{
+                margin-bottom: 0;
+            }
+            .container7{
+                padding: 100px;
+                margin: 0;
+                height: auto;
+                -webkit-box-shadow: 12px 12px 63px #e8e8e8, -12px -12px 63px #ffffff;
+                box-shadow: 12px 12px 63px #e8e8e8, -12px -12px 63px #ffffff;
+                margin: 50px;
+                border-radius: 30px;
+
+            }
+            .container7 img{
+                height: 600px;
+                width: 900px;
+                
+            }
+            .colast1 button{
+                color:white;
+                background-color: rgb(25, 102, 216);
+                width: 150px;
+                height: 60px;
+                border-radius: 20px;
+                border: none;
+                font-weight: 500;
+                animation-name: button1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            .colast1{
+                padding: 100px;
+            }
+            .colast1 h1{
+                font-size: 60px;
+                font-size: clamp(2px,60px,80px);
+            }
+            .colast1 p{
+                font-size: 20px;
+            }
+            .act{
+                color: #65D8DF;
+            }
+            .nav-item{
+                margin-right: 40px;
+            }
+           
+            .bbc{
+                opacity: 0;
+                transition: all 1s;
+                transform: translate(-50%);
+            }
+            .show{
+                opacity: 1;
+                transform: translate(0);
+            }
+            @media(prefers-reduced-motion: no-preference){
+                .hidden{
+                    transition: none;
+                }
+        }
+        .ticon{
+            color: black;
+        }
+        @media only screen and (max-width:1199px){
+            .container2{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .container2 .col1{
+                margin: 0;
+                width: 100vw;
+                margin-right: 0;
+            }
+            .col2{
+                margin: 0;
+            }
+            .container1{
+                padding: 50px;
+                padding-top: 120px;
+            }
+            .v1{
+                padding:100px;
+            }
+            .specv2{
+               position:static;
+               text-align: center;
+               border-radius:30px;
+
+            }
+            .spec2, .spec3{
+                padding:100px;
+                padding-bottom: 10px;
+            }
+            .colast1{
+                margin-bottom: 70px;
+            }
+        }
+        @media only screen and (max-width:1582px){
+            .container1{
+                padding: 50px;
+                padding-top: 120px;
+            }
+        }
+        @media only screen and (max-width:1389px){
+            .v1{
+                padding: 50px;
+            }
+        }
+        @media only screen and (max-width:1355px){
+            .specv2 h1{
+                font-size: 50px;
+            }
+            .colast1{
+                padding: 0px;
+            }
+            }
+        @media only screen and (max-width:1002px){
+            .talk, .last1{
+                padding: 50px;
+            }
+        }
+        @media only screen and (max-width:1002px){
+            .colast2, .phone1{
+                padding:0px;
+            }
+            .container1 h1{
+                font-size: 60px;
+            }
+        }
+
+        @media only screen and (max-width:562px){
+            .container1{
+                padding:20px;
+                padding-top: 100px;
+            }
+            .v1 h1{
+                font-size: 30px;
+            }
+            .container1 h1{
+                font-size: 45px;
+            }
+            .col1{
+                padding: 0;
+            }
+            .col2{
+                padding: 20px;
+            }
+            .specv2{
+                padding:20px;
+                width: 100%;
+                font-size: 30px;
+                height: auto;
+
+            }
+            .spec2, .spec3{
+                padding: 50px;
+            }
+            .colast1{
+                padding: 0px;
+            }
+            .colast1 h1{
+                font-size: 50px;
+            }
+            .colast2 img{
+                height: 300px;
+            }
+            .spec1{
+                padding: 50px;
+            }
+            .specv2 h1{
+                font-size: 30px;
+            }
+            .phone1{
+                padding:0;
+            }
+            .talk{
+                padding:0px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            .phone2{
+                padding:0px;
+                margin: 0px;
+            }
+            .talk h1{
+                font-size: 30px;
+            }
+            .last1{
+                padding: 0;
+                padding-bottom: 50px;
+            }
+            .last1 h1{
+                font-size: 30px;
+            }
+            .last2{
+                padding:0;
+            }
+            .container5{
+                margin: 0;
+                padding: 50px;
+            }
+            .colast1{
+                padding: 0;
+            }
+            .colast1 h1{
+                font-size: 30px;
+            }
+            .container7{
+                padding: 50px;
+                margin: 10px;
+            }
+            .container6{
+                padding: 50px;
+            }
+            .last1 button{
+                animation: none;
+            }
+            .navbar-brand{
+                font-size: 20px;
+            }
+           
+        }
+
+       
+
+        </style>
+    <script defer src="app.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <a class="navbar-brand">Spectacles <span id="logo">V2</span></a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ticon" >aaaa</span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link act" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                  
+                </ul>
+            </div>
+        </nav>
+        <div class="container1 container-fluid bbc">
+            <h3>Breaking news</h3>
+            <h1>Snapchat <br> Launches <br> Spectacles V2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam quaerat, 
+                ab sint cumque non corporis minima dolore sit, placeat amet. Quo labore error tenetur,
+                 beatae voluptatibus similique dolore dolores.</p>
+            <button> Read more </button>
+
+        </div>
+        <div class=" row container2 bbc">
+           
+                <div class="col-xl-6 col-md-12  col-sm-12 col1 container">
+                    <img class="img-fluid" src="images/glass2.jpg" alt="">
+
+                </div>
+                <div class="col-xl-6 col-md-12  col-sm-12  col2">
+                    <div class="v1 container">
+                        <h1>V1 was to get people <br>Comfortable</h1>
+                        <br>
+                        <br>
+                       
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam quaerat, 
+                            ab sint cumque non corporis minima dolore sit, placeat amet. Quo labore error tenetur,
+                             beatae voluptatibus similique dolore dolores.</p>
+                             <br>
+                             <button>Read more</button>
+                    </div>
+            </div>
+       
+            
+        </div>
+        <div class="container3 bbc row">
+            <div class="col-xl-4 spec1 container-fluid">
+                <div class="specv2 container-fluid">
+                    <h1>The Specs <br> of <br> Spectacles <br> v2</h1>
+                </div>
+            </div>
+            <div class="col-xl-4 spec2 container-fluid">
+                <p>Snapchat isn’t making a spectacle out of the Spectacles
+                     V2 launch. There’s no hidden vending machines with
+                      cryptic clues leading to long lines. They’re openly
+                       for sale today in Snap’s four top markets, with IE, BE, 
+                       NL, SE, NO, DK, FI, DE, AT, CH, PL, ES and IT coming next week.
+                        This might make sure everyone who wants them can have them 
+                        before they inevitably stop being trendy and will have to 
+                        rely on their true value. </p>
+            </div>
+            <div class="col-xl-4 spec3 container-fluid">
+                <p>As soon as you slide them out of their tennis ball tube package, 
+                    you’ll notice a higher build quality in Spectacles V2. 
+                    The yellow case is about 1/3 smaller, so you could squeeze 
+                    it in some pants pockets or easily throw it in a jacket or purse. 
+                    The old version basically required a backpack. The charging port 
+                    has also been moved to the side so it doesn’t fall out so easily. </p>
+            </div>
+        </div>
+        <div class="container7 bbc row">
+            
+            <div class="col-xl-6 colast1 container-fluid">
+                <h1>Remember Every Adventure</h1>
+                <br>
+                <br>
+                <p>Spectacles are water resistant, so you can make memories wherever you 
+                    are, from bike rides to beach days.</p>
+                     <br>
+                     <br>
+                     <br>
+                     <button>Read more</button>
+            </div>
+            <div class=" col-xl-6 colast2">
+                <img class="img-fluid" src="images/glass5.jpg" alt="">
+            </div>
+            
+        </div>
+        <div class="container5 bbc row">
+            <div class="col-xl-6 phone1">
+                <img class="img-fluid" src="images/glass4.png" alt="">
+
+            </div>
+            <div class="col-xl-6 phone2">
+                <div class="talk container-fluid">
+                    <h1>Charge on the Go</h1>
+                    <br>
+                    <br>
+                   
+                   <p>Syncing to your phone now just requires Bluetooth and a seven-second 
+                    press of the shutter button, rather than a shoddy QR code scan. Exports
+                     always happens in HD over Specs’ internal Wi-Fi now, and transfers
+                      go four times quicker than the old process that required you to 
+                      sync standard definition (low-quality) versions of videos first, 
+                      then pick your favorites, then download them in HD.</p>
+                         <br>
+                         <button>Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="container6 bbc row">
+            <div class="col-xl-6 col-md-12 col-sm-12 last1">
+                <h1>Keeping Snapchat <br>Spectacular</h1>
+                <br>
+                <br>
+                <p>Snapchat may have finally found a way to make Spectacles carryable and wearable
+                     enough that people use them as their default sunglasses. That could lead 
+                     to way more content being produced from Spectacles, which in turn could make 
+                     Snapchat more interesting at a time when it’s desperate to differentiate from 
+                     Instagram with something tough to copy.</p>
+                     <br>
+                     <br>
+                     <button>Read more</button>
+            </div>
+            <div class="col-xl-6 col-md-12 col-sm-12 last2">
+                <img src="images/lastglass.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>
